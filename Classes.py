@@ -577,8 +577,7 @@ class KiRL(object):
             #    next_step_predicate = 'next(t'+str(t)+',t'+str(time)+')'
             #    db += [next_step_predicate]
             value = sum([approx.evaluate([timed_target],db) for approx in self.model])
-            print (timed_action,timed_target,db,value) 
-            Unit_Tests.pause_and_exit_on_key_press()           
+            return value          
 
     def __repr__(self):
         """
