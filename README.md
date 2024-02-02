@@ -12,7 +12,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-##Example Execution
+## Example Execution
 ```
 from Classes import Synth_Data, Unit_Tests, Prover, KiRL
 
