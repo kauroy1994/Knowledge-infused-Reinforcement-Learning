@@ -23,16 +23,17 @@ def run():
     Prover.set_config() #set prover configuration from config.json file, e.g., max clause length
     synthetic_data_obj = Synth_Data(dataset="stock_trading") #create synthetic dataset
 
-    Imitation learning (training)
+    #vanilla imitation learning (training)
     learner = KiRL(data_object=synthetic_data_obj)
     learner.imitation_learn()
     print ("%% The learned model and gradient approximations are ... ")
     print (learner.model)
     print ('='*40)
 
-    #Inference using the learned model
+    #inference using the learned model
     test_context, time =synthetic_data_obj.get_test_facts()
-    learner.predict(test_context)
+    predicted_value = learner.predict(test_context)
+    print (predicted_value)
 
 if __name__ == '__main__':
     run()
