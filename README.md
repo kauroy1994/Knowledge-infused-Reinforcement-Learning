@@ -13,7 +13,7 @@ python main.py
 ```
 
 ## Example Execution
-```
+```python
 from Classes import Synth_Data, Unit_Tests, Prover, KiRL
 
 def run():
