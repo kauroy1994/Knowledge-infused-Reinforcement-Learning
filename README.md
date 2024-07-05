@@ -1,4 +1,4 @@
-# KiRL Development Repo
+# Knowledge-infused Reinforcement Learning Development Repository
 
 This repository contains implementations for knowledge-infused reinforcement learning methods
 
